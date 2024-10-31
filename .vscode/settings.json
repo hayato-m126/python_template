@@ -1,0 +1,29 @@
+{
+  "cSpell.languageSettings": [
+    {
+      "languageId": "c,cpp,python",
+      "allowCompoundWords": false
+    }
+  ],
+  "editor.formatOnSave": false,
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/.venv/lib/**/site-packages/",
+    "${workspaceFolder}/projects/**/src/"
+  ],
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/.venv/lib/**/site-packages/",
+    "${workspaceFolder}/projects/**/src/"
+  ],
+}

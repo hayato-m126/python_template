@@ -1,0 +1,51 @@
+[project]
+name = "my_template"
+version = "0.1.0"
+description = "python template"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1.7",
+]
+license = "Apache-2.0"
+authors = [
+  { name = "Hayato Mizushima", email = "hayato-m126@users.noreply.github.com" },
+]
+
+[project.scripts]
+sample = "sample:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "ruff==0.7.0",
+]
+
+[tool.uv.workspace]
+members = ["projects/*"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.ruff]
+line-length = 100
+output-format = "full"
+
+[tool.ruff.lint]
+# https://beta.ruff.rs/docs/rules/
+select = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+ignore = ["Q000", "ANN101", "ANN102", "ANN401", "PGH004", "E501", "PLR0913", "S101", "S301", "S603", "SIM115", "D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107", "D203", "D212", "D404", "D417", "PD011", "PD002", "PD901", "COM812", "ISC001"]
+fixable = ["D", "I", "ANN", "COM", "EXE", "PIE"]
+
+[tool.ruff.lint.isort]
+# https://pycqa.github.io/isort/docs/configuration/options.html#default-section
+force-sort-within-sections = true
+known-third-party = ["launch", "yaml"]
+force-single-line = true
+# https://beta.ruff.rs/docs/settings/#isort-relative-imports-order
+relative-imports-order = "closest-to-furthest"
+order-by-type = false
