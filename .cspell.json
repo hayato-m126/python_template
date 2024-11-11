@@ -4,12 +4,14 @@
     "Mizushima",
     "amannn",
     "autofix",
+    "charliermarsh",
     "debugpy",
     "isort",
     "linebreak",
     "markdownlint",
     "pytest",
     "shellcheck",
-    "shfmt"
+    "shfmt",
+    "venv"
   ]
 }
