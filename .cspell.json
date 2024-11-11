@@ -1,9 +1,13 @@
 {
   "words": [
+    "Hayato",
+    "Mizushima",
     "amannn",
     "autofix",
+    "isort",
     "linebreak",
     "markdownlint",
+    "pytest",
     "shellcheck",
     "shfmt"
   ]
