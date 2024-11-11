@@ -25,5 +25,5 @@
   "python.analysis.extraPaths": [
     "${workspaceFolder}/.venv/lib/**/site-packages/",
     "${workspaceFolder}/projects/**/src/"
-  ],
+  ]
 }
