@@ -4,9 +4,6 @@ version = "0.1.0"
 description = "python template"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "click>=8.1.7",
-]
 license = "Apache-2.0"
 authors = [
   { name = "Hayato Mizushima", email = "hayato-m126@users.noreply.github.com" },
