@@ -1,0 +1,17 @@
+services:
+  py-sample:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # args:
+      #   - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+    # environment:
+    #   LOG_LEVEL: ${LOG_LEVEL}
+    # ports:
+    #   - ${HOST_BINDING:-}${HOST_PORT}:{CONTAINER_PORT}
+    # depends_on:
+    #   - other_service
+    volumes:
+      - ./projects:/app/projects
+      - ./.vscode:/app/.vscode
+    restart: unless-stopped
