@@ -7,4 +7,10 @@ WORKDIR /app
 COPY pyproject.toml uv.lock README.md /app/
 COPY projects/ /app/projects
 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN uv sync
+
+CMD ["/bin/bash"]
