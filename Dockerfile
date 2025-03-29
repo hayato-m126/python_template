@@ -13,4 +13,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN uv sync
 
-CMD ["/bin/bash"]
+# create docker normal user after setup
+ARG USER_ID=1000
+ARG GROUP_ID=1000
+ARG DOCKER_USER=user
+RUN groupadd -g $GROUP_ID $DOCKER_USER && \
+    useradd -l -u $USER_ID -g $GROUP_ID -ms /bin/bash user
+USER $DOCKER_USER
+
+CMD ["tail", "-f", "/dev/null"]
