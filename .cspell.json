@@ -9,6 +9,8 @@
     "isort",
     "linebreak",
     "markdownlint",
+    "pylance",
+    "pyproject",
     "pytest",
     "shellcheck",
     "shfmt",
