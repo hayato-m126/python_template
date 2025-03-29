@@ -1,19 +1,27 @@
 {
-  "words": [
-    "Hayato",
-    "Mizushima",
-    "amannn",
-    "autofix",
-    "charliermarsh",
-    "debugpy",
-    "isort",
-    "linebreak",
-    "markdownlint",
-    "pylance",
-    "pyproject",
-    "pytest",
-    "shellcheck",
-    "shfmt",
-    "venv"
-  ]
+  "version": "0.2",
+  "dictionaries": [
+    "person-names",
+    "programming-terms",
+    "prefecture-names",
+    "project-terms"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "person-names",
+      "path": "./dictionaries/person-names.txt",
+      "description": "name of developer, or tool author"
+    },
+    {
+      "name": "programming-terms",
+      "path": "./dictionaries/programming-terms.txt",
+      "description": "general programming terms used in this project"
+    },
+    {
+      "name": "project-terms",
+      "path": "./dictionaries/project-terms.txt",
+      "description": "project specific terms used in this project"
+    }
+  ],
+  "ignorePaths": [".venv/**", "pytest_cache/**"]
 }
