@@ -21,6 +21,7 @@ poolclass
 psycopg
 pycache
 pydantic
+pylance
 pyproject
 pytest
 qualname
