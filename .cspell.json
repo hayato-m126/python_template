@@ -1,10 +1,6 @@
 {
   "version": "0.2",
-  "dictionaries": [
-    "person-names",
-    "programming-terms",
-    "project-terms"
-  ],
+  "dictionaries": ["person-names", "programming-terms", "project-terms"],
   "dictionaryDefinitions": [
     {
       "name": "person-names",
