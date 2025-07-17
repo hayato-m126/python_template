@@ -50,3 +50,8 @@ repos:
       - id: ruff
         args: [--fix]
       - id: ruff-format
+
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v9.1.1
+    hooks:
+      - id: cspell # Spell check changed files
