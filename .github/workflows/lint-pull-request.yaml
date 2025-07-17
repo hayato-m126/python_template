@@ -7,6 +7,10 @@ on:
       - edited
       - synchronize
 
+permissions:
+  pull-requests: read
+  statuses: write
+
 jobs:
   lint-pull-request:
     runs-on: ubuntu-latest
