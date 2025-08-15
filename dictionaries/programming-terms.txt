@@ -33,6 +33,7 @@ sqlalchemy
 sqlmodel
 sqltypes
 termcolor
+trixie
 uvicorn
 venv
 WORKDIR
