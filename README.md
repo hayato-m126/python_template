@@ -1,7 +1,8 @@
 # python template
 
-python のテンプレート
+python template
 
 ## usage
 
-project name変えてuv sync
+1. Change project name
+2. uv sync --all-package
