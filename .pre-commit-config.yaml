@@ -18,7 +18,7 @@ repos:
         args: [--markdown-linebreak-ext=md]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
+    rev: v0.47.0
     hooks:
       - id: markdownlint
         args: [-c, .markdownlint.yaml, --fix]
@@ -45,13 +45,13 @@ repos:
         args: [-w, -s, -i=4]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.0 # Match the version used by the vscode extension. Otherwise, the editor and the command may say different things.
+    rev: v0.14.8 # Match the version used by the vscode extension. Otherwise, the editor and the command may say different things.
     hooks:
       - id: ruff
         args: [--fix]
       - id: ruff-format
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v9.2.0
+    rev: v9.3.3
     hooks:
       - id: cspell # Spell check changed files
