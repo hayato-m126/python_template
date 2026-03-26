@@ -23,7 +23,7 @@ packages = ["sample"]
 exclude-newer = "1 week"
 dev-dependencies = [
     "pytest>=8.3.3",
-    "ruff==0.14.8",
+    "ruff==0.15.7",
 ]
 
 [tool.uv.workspace]

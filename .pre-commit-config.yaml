@@ -45,7 +45,7 @@ repos:
         args: [-w, -s, -i=4]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.8 # Match the version used by the vscode extension. Otherwise, the editor and the command may say different things.
+    rev: v0.15.7 # Match the version used by the vscode extension. Otherwise, the editor and the command may say different things.
     hooks:
       - id: ruff
         args: [--fix]
