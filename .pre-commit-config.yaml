@@ -39,19 +39,19 @@ repos:
       - id: shellcheck
 
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.13.0-1
+    rev: v3.13.1-1
     hooks:
       - id: shfmt
         args: [-w, -s, -i=4]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.7 # Match the version used by the vscode extension. Otherwise, the editor and the command may say different things.
+    rev: v0.15.10 # Match the version used by the vscode extension. Otherwise, the editor and the command may say different things.
     hooks:
       - id: ruff
         args: [--fix]
       - id: ruff-format
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v9.7.0
+    rev: v10.0.0
     hooks:
       - id: cspell # Spell check changed files
