@@ -21,7 +21,9 @@ packages = ["sample"]
 
 [tool.uv]
 exclude-newer = "1 week"
-dev-dependencies = [
+
+[dependency-groups]
+dev = [
     "pytest>=8.3.3",
     "ruff==0.15.7",
 ]
