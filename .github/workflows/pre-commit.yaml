@@ -15,5 +15,11 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v6
 
+      # to run pre-commit action, Node.js is required.
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
       - name: Run pre-commit
         uses: pre-commit/action@v3.0.1
