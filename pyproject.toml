@@ -25,7 +25,7 @@ exclude-newer = "1 week"
 [dependency-groups]
 dev = [
     "pytest>=8.3.3",
-    "ruff==0.15.10",
+    "ruff==0.16.2",
 ]
 
 [tool.uv.workspace]
