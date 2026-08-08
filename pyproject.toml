@@ -21,6 +21,7 @@ packages = ["sample"]
 
 [tool.uv]
 exclude-newer = "1 week"
+exclude-newer-package = { ruff = false }
 
 [dependency-groups]
 dev = [
