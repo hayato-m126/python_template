@@ -6,7 +6,7 @@ colorlog
 cprint
 datefmt
 debugpy
-Dokerfile
+Dockerfile
 isort
 KHTML
 levelname
